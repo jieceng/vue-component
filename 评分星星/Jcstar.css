@@ -1,3 +1,10 @@
 .jc-star{
-	font-size: 18px;
+	display: inline-block;
+}
+.jc-star span{
+	display: inline-block;
+	font-family: monospace;
+	font-size: 30px;
+	vertical-align: top;
+	cursor: pointer;
 }
