@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>评分星星</title>
+		<link rel="stylesheet" href="Jcstar.css">
+		<script src="vue.js"></script>
+		<script src="JcStar.js"></script>
+	</head>
+	<body>
+		<div id="root">
+			<jc-star :count="6" icon="☆" iconed="★" :value.sync="starValue"></jc-star>
+			<h2>你选择的了{{ starValue }}分</h2>
+		</div>
+		<script>
+			var root = new Vue({
+				el: '#root',
+				data: {
+					starValue: 3
+				}
+			})
+		</script>
+	</body>
+</html>
